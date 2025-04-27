@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store Management</title>
+    <link rel="stylesheet" href="cloths store.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clothing Store Management</h1>
+
+        <!-- Stock Entry Form -->
+        <section class="stock-entry">
+            <h2>Stock Entry</h2>
+            <form id="stockForm">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" required>
+
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <!-- Inventory Display -->
+        <section class="inventory">
+            <h2>Inventory</h2>
+            <ul id="inventoryList"></ul>
+        </section>
+
+        <!-- Sales Tracker -->
+        <section class="sales-tracker">
+            <h2>Sales Tracker</h2>
+            <form id="salesForm">
+                <label for="soldItem">Item Name:</label>
+                <select id="soldItem" required></select>
+
+                <label for="soldQuantity">Quantity Sold:</label>
+                <input type="number" id="soldQuantity" required>
+
+                <button type="submit">Record Sale</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="cloths store.js"></script>
+</body>
+</html>
